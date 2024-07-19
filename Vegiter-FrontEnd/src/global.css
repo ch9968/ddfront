@@ -1,0 +1,59 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Apple SD Gothic Neo EB";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Apple SD Gothic Neo ExtraBold"),
+    url("https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/800_AppleSDGothicNeo-ExtraBold.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo M";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Apple SD Gothic Neo Medium"),
+    url("https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/fonts/400_AppleSDGothicNeo-Medium.otf")
+      format("opentype");
+}
+
+:root {
+  --white: #ffffff;
+  --red: #FF2400;
+  --black: #000000;
+  --secondary: #212a38;
+
+  --green-gradient: linear-gradient(180deg, #b2f584 0%, #8ff2a0 100%);
+
+  --big-font-family: "Apple SD Gothic Neo EB";
+  --small-font-family: "Apple SD Gothic Neo M";
+  --sf-pro: "SF Pro Display";
+}
+
+* {
+  font-family: var(--small-font-family), sans-serif;
+}
+#root {
+  height: 100%;
+  width: 375px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--secondary);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
